@@ -1,0 +1,55 @@
+/* Input */
+.square-input {
+    user-select: none;
+    outline-color: var(--primary);
+    border-radius: 6px;
+    border: 1px solid var(--theme-dividers) !important;
+    display: inline;
+    transition: .2s ease all;
+    background-color: var(--color);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Input DISABLED */
+.square-input:disabled {
+    cursor: not-allowed;
+}
+
+/* Input BLOCK */
+.square-input[block=true] {
+    width: 100%;
+}
+
+/* 
+    Rounded 
+*/
+
+/* Rounded */
+.square-input[rounded = true] {
+    border-radius: 32px;
+}
+
+/* 
+    Outlined 
+*/
+
+/* Outline */
+.square-input[outlined = true] {
+    border: 1px solid var(--focus-color) !important;
+}
+
+/* 
+    Animations
+*/
+
+/* Verify if user input can hover */
+@media (hover: hover) {
+
+    /* Button animation HOVER */
+    .square-input:hover:not(:disabled) {
+        border: 1px solid var(--focus-color) !important;
+    }
+    
+}

@@ -1,0 +1,103 @@
+// Colors CSS variables
+:root {
+    --primary: #009688;
+    --accent: #4caf50;
+    --card-radius: 9px;
+}
+
+// Colors
+$primary-color: var(--primary);
+$primaryFocused-color: #00796b;
+
+$secondary-color: #eeeeee;
+$secondaryFocused-color: #a1e5ab;
+
+$accent-color: var(--accent);
+$accentFocused-color: #1b5e20;
+
+$primary-text: #333333;
+
+$description-text: #7f7f7f;
+
+$success-color: #4caf50;
+$info-color: #00bcd4;
+$warning-color: #fb8c00;
+$error-color: #f44336;
+
+/* 
+    Text
+*/
+
+.primary-color-text {
+    color: $primary-color;
+}
+
+.title-text {
+    color: $primary-text;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.secondary-title-text {
+    color: $primary-text;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.description-text {
+    color: $description-text;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.primary-text {
+    color: $primary-color;
+}
+
+.secondary-text {
+    color: $secondary-color;
+}
+
+.accent-text {
+    color: $accent-color;
+}
+
+/*
+    Colors
+*/
+
+.primary {
+    background-color: $primary-color;
+}
+
+// .primary:hover{
+//     background-color: $primaryFocused-color;
+// }
+
+.secondary {
+    background-color: $secondary-color;
+}
+
+// .secondary:hover{
+//     background-color: $secondaryFocused-color;
+// }
+
+.accent {
+    background-color: $accent-color;
+}
+
+// .accent:hover{
+//     background-color: $accentFocused-color;
+// }
+
+/*
+    General tags
+*/
+
+.svlt-grid-shadow {
+    background-color: #FDEAD3 !important;
+}
+
+.flex-1 {
+    flex: 1;
+}

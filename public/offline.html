@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<!-- HTML main element -->
+<html lang="en">
+
+    <!-- Head element -->
+    <head>
+
+        <!-- Meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Status bar color -->
+        <meta name="msapplication-TileColor" content="#eeeeee">
+        <meta name="theme-color" content="#eeeeee">
+
+        <!-- Title -->
+        <title>Offline - Square</title>
+
+        <!-- Style -->
+        <style>
+
+            /* CSS reset */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Body element */
+            body {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #eeeeee;
+            }
+
+            /* Popup */
+            .popup {
+                width: 90%;
+                max-width: 400px;
+                height: auto;
+                background-color: #fff;
+                border-radius: 9px;
+                font-family: Arial, Helvetica, sans-serif;
+                box-shadow: 0 2px 1px -1px #0003,0 1px 1px #00000024,0 1px 3px #0000001f!important;
+            }
+
+            /* Popup elements */
+            .popup > * {
+                padding: 16px;
+            }
+
+            /* Popup title */
+            .popup > .title {
+                font-weight: 400;
+            }
+
+            /* Reload button */
+            .popup .reload-btn {
+                padding: 16px 24px;
+                font-size: 1rem;
+                border-radius: 32px;
+                background-color: #009688;
+                color: #fff;
+                border: 0;
+                cursor: pointer;
+                transition: .5s ease all;
+            }
+
+            /* Reload button, Active or Hover */
+            .popup .reload-btn:hover, .popup .reload-btn:active, .popup .reload-btn:focus {
+                opacity: .4;
+            }
+
+        </style>
+
+    </head>
+
+    <!-- Body element -->
+    <body>
+
+        <!-- Popup -->
+        <div class="popup">
+
+            <!-- Title -->
+            <h1 class="title">
+                Offline
+            </h1>
+
+            <!-- Content -->
+            <div>
+                We regret to inform you that you are currently not connected to the internet. Please ensure that your device is connected to a stable internet connection in order to access our services.
+            </div>
+
+            <!-- Action -->
+            <div>
+
+                <!-- Button -->
+                <button class="reload-btn" onclick="window.location.reload()">
+                    Reload page
+                </button>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

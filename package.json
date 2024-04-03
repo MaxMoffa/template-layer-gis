@@ -1,0 +1,63 @@
+{
+    "name": "square",
+    "description": "Square is an environmental monitoring platform that uses sensors to collect real-time data on the surrounding environment",
+    "version": "2.0.2",
+    "author": {
+        "name": "Massimo Moffa",
+        "email": "massimo.moffa@sensesquare.eu",
+        "url": "https://github.com/MaxMoffa"
+    },
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "dev": "run-p dev:*",
+        "dev:routify": "routify",
+        "dev:vite": "vite",
+        "preview": "vite preview --port 9001",
+        "build": "run-s build:*",
+        "build:routify": "routify -b",
+        "build:vite": "vite build"
+    },
+    "devDependencies": {
+        "@rollup/plugin-json": "^4.1.0",
+        "@roxi/routify": "^2.18.3",
+        "@sveltejs/vite-plugin-svelte": "1.4.0",
+        "autoprefixer": "^10.2.5",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.2.8",
+        "postcss-import": "^14.0.0",
+        "svelte": "^3.59.1",
+        "svelte-intersection-observer": "^0.9.1",
+        "svelte-preprocess": "^4.7.0",
+        "vite": "^3.2.7",
+        "vite-plugin-pwa": "^0.12.8"
+    },
+    "dependencies": {
+        "@crownframework/svelte-error-boundary": "^1.0.3",
+        "@mdi/font": "^2.2.43",
+        "@mdi/js": "^6.2.95",
+        "@sakitam-gis/mapbox-wind": "^1.1.2",
+        "@turf/boolean-point-in-polygon": "^6.5.0",
+        "chart.js": "^4.4.0",
+        "dom-to-image": "^2.6.0",
+        "jspdf": "^2.5.1",
+        "leaflet": "^1.7.1",
+        "maplibre-gl": "^2.4.0",
+        "moment": "^2.29.4",
+        "mp4-wasm": "github:mattdesl/mp4-wasm",
+        "node-sass": "8.0.0",
+        "sass": "1.58.0",
+        "shopify-buy": "^2.19.0",
+        "svelte-carousel": "^1.0.16",
+        "svelte-chartjs": "^3.1.2",
+        "svelte-draggable-draw": "^1.0.3",
+        "svelte-fullscreen": "^2.0.0",
+        "svelte-grid": "^5.1.2",
+        "svelte-material-icons": "^1.0.3",
+        "svelte-materialify": "^0.3.11",
+        "svelte-select": "^4.4.3",
+        "svelte-sortable-list": "^1.1.0",
+        "typescript": "^4.9.5",
+        "vite-plugin-chunk-split": "^0.2.4"
+    }
+}
