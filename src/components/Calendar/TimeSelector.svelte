@@ -132,11 +132,9 @@
 
 </main>
 
-<style type="scss">
+<style lang="css">
 
-    @import 'svelte-materialify/src/styles/variables';
-
-    // Main calendar container
+    /* Main calendar container */
     main {
         max-width: 100%;
         height: 368px;
@@ -145,12 +143,12 @@
         width: 100%;
     }
 
-    // Selectors
+    /* Selectors */
     main > .selectors {
         height: 100%;
     }
 
-    // Controller
+    /* Controller */
     .selectors > .selector {
         display: inline-block;
         width: auto;
@@ -160,7 +158,7 @@
         scrollbar-width: none;
     }
 
-    // Controller item
+    /* Controller item */
     .selectors > .selector > .item {
         display: block;
         user-select: none;
@@ -172,7 +170,7 @@
         scroll-margin-top: 60px;
     }
 
-    // Text value
+    /* Text value */
     .selectors > .selector > .item > .text {
         padding: 16px 24px;
     }
@@ -185,7 +183,7 @@
     /* Controller item selected */
     .selectors > .selector > .item[selected = true] {
         color: #ffffff;
-        background-color: $primary-color;
+        background-color: var(--primary);
     }
 
     /* Controller item clickable hover */
@@ -198,7 +196,7 @@
         background: rgba(0,0,0,.3);
     }
 
-    // Controller scrollbar
+    /* Controller scrollbar */
     .selectors > .selector::-webkit-scrollbar {
         width: 0;
     }

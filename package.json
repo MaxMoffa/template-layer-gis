@@ -21,16 +21,16 @@
     "devDependencies": {
         "@rollup/plugin-json": "^4.1.0",
         "@roxi/routify": "^2.18.3",
-        "@sveltejs/vite-plugin-svelte": "1.4.0",
+        "@sveltejs/vite-plugin-svelte": "3.0.2",
         "autoprefixer": "^10.2.5",
         "npm-run-all": "^4.1.5",
         "postcss": "^8.2.8",
         "postcss-import": "^14.0.0",
-        "svelte": "^3.59.1",
+        "svelte": "^4.2.12",
         "svelte-intersection-observer": "^0.9.1",
-        "svelte-preprocess": "^4.7.0",
-        "vite": "^3.2.7",
-        "vite-plugin-pwa": "^0.12.8"
+        "svelte-preprocess": "^5.1.3",
+        "vite": "^5.2.8",
+        "vite-plugin-pwa": "^0.19.8"
     },
     "dependencies": {
         "@crownframework/svelte-error-boundary": "^1.0.3",
@@ -56,7 +56,6 @@
         "svelte-material-icons": "^1.0.3",
         "svelte-materialify": "^0.3.11",
         "svelte-select": "^4.4.3",
-        "svelte-sortable-list": "^1.1.0",
         "typescript": "^4.9.5",
         "vite-plugin-chunk-split": "^0.2.4"
     }

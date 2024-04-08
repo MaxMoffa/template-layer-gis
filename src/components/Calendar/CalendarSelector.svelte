@@ -455,24 +455,22 @@
     
 </main>
 
-<style type="scss">
+<style lang="css">
 
-    @import 'svelte-materialify/src/styles/variables';
-
-    // Main calendar container
+    /* Main calendar container */
     main {
         width: 90vw;
         max-width: 300px;
         height: auto;
     }
 
-    // Month switch
+    /* Month switch */
     .month-switch {
         height: 24px;
         display: flex;
     }
 
-    // Month switch action
+    /* Month switch action */
     .month-switch > .action {
         height: 100%;
         display: grid;
@@ -526,12 +524,12 @@
 
     /* Days table day selected */
     .week-table > .day[selected = true] {
-        color: $primary-color;
+        color: var(--primary);
     }
 
     /* Days table day selected */
     .week-table > .day[today = true] {
-        color: $primary-color;
+        color: var(--primary);
     }
 
     /* Days table day backdrop selected */
@@ -541,7 +539,7 @@
         width: 100%;
         height: 100%;
         transform: translate(0, -100%);
-        background-color: $primary-color;
+        background-color: var(--primary);
         opacity: .2;
     }
 

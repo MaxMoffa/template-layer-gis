@@ -214,9 +214,7 @@
 
 </Overlay>
 
-<style type="scss">
-
-    @import 'svelte-materialify/src/styles/variables';
+<style type="css">
 
     /* Date popup */
     .date-popup {
