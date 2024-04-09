@@ -7,6 +7,9 @@ Run `npm install` in the folder to install all the required modules
 ### Scripts
 Run with `npm run <command>`, for example `npm run dev`
 
+### Node.js
+This repository has been tested with node v18.13.0 and npm v8.19.3
+
 | Command   | Description                                   |
 |-----------|-----------------------------------------------|
 | `dev`     | Development (port 5000)                       |
