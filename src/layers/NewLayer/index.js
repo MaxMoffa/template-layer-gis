@@ -17,7 +17,8 @@ import Layer from "../Layer";
 const DEFAULT_STATE = {
     mapStyle: "standard",
     enableMountains: false,
-    theme: "light"
+    theme: "light",
+    file: null
 }
 
 export default class NewLayer extends Layer {
@@ -34,6 +35,14 @@ export default class NewLayer extends Layer {
                 position: "top-right",
                 content: { type: "svg", value: mdiTestTube }
             },
+            saveState: false
+        },
+        {
+            cols: 12,
+            accept: ".csv",
+            type: "file",
+            key: "file",
+            placeholder: "Input file",
             saveState: false
         }
     ];
@@ -71,12 +80,23 @@ export default class NewLayer extends Layer {
 
         // TODO: Handle layer refresh
 
+        const reader = new FileReader()
+        
+        reader.onload = () => {
+            const dataUrl = reader.result;
+            console.log(dataUrl)
+        }
+
+        reader.readAsDataURL(super.getState().file)
+
     }
 
     // Render
     render() {
 
         // TODO: Handle first render
+        // Refresh on change
+        super.on("stateChange", super.bind(this.refresh, this));
 
     }
 

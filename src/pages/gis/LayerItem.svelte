@@ -8,6 +8,7 @@
 	import { quintOut } from 'svelte/easing';
     import { onDestroy, createEventDispatcher } from 'svelte';
     import DateSelector from '../../components/DateSelector.svelte';
+    import FileSelector from '../../components/FileSelector.svelte';
 
     // Layer instance
     export let layer;
@@ -283,6 +284,17 @@
                                                     {o?.placeholder || "Unknown"}
                                                 </Slider>
 
+                                        <!-- File -->
+                                        {:else if o?.type === "file"}
+
+                                            <FileSelector
+                                                accept={o?.accept}
+                                                file={state[o?.key]}
+                                                on:change={({ detail }) => {
+                                                    layer?.setState(o?.key, detail);
+                                                }}
+                                            />
+                                        
                                         {/if}
     
                                     </Col>
