@@ -18,7 +18,9 @@ const DEFAULT_STATE = {
     mapStyle: "standard",
     enableMountains: false,
     theme: "light",
-    file: null
+    file: null,
+    min: 20,
+    max: 80
 }
 
 export default class NewLayer extends Layer {
@@ -43,6 +45,20 @@ export default class NewLayer extends Layer {
             type: "file",
             key: "file",
             placeholder: "Input file",
+            saveState: false
+        },
+        {
+            cols: 6,
+            type: "number",
+            key: "min",
+            placeholder: "Minimo",
+            saveState: false
+        },
+        {
+            cols: 6,
+            type: "number",
+            key: "max",
+            placeholder: "Massimo",
             saveState: false
         }
     ];
@@ -79,15 +95,7 @@ export default class NewLayer extends Layer {
     refresh() {
 
         // TODO: Handle layer refresh
-
-        const reader = new FileReader()
-        
-        reader.onload = () => {
-            const dataUrl = reader.result;
-            console.log(dataUrl)
-        }
-
-        reader.readAsDataURL(super.getState().file)
+        console.log(super.getState().min, typeof(super.getState().min));
 
     }
 

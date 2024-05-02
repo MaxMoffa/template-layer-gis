@@ -2,7 +2,7 @@
 
     // Imports
     import { theme, getColor } from '../../store/theme';
-    import { AppBar, Button, Checkbox, Col, Divider, Icon, ProgressCircular, Ripple, Row, Select, Slider, Tooltip } from 'svelte-materialify/src';
+    import { AppBar, Button, Checkbox, Col, Divider, Icon, ProgressCircular, Ripple, Row, Select, Slider, TextField, Tooltip } from 'svelte-materialify/src';
     import { mdiChevronDown, mdiChevronUp, mdiDotsVertical, mdiEye, mdiEyeOff, mdiLock, mdiLockOpen} from '@mdi/js';
     import { slide } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
@@ -294,6 +294,20 @@
                                                     layer?.setState(o?.key, detail);
                                                 }}
                                             />
+                                        
+                                        <!-- Text -->
+                                        {:else if o?.type === "number"}
+
+                                            <TextField
+                                                filled
+                                                type={"number"}
+                                                value={state[o?.key]}
+                                                on:change={(detail) => {                                                    
+                                                    layer?.setState(o?.key, detail.target.valueAsNumber);
+                                                }}
+                                            >
+                                                {o?.placeholder || "Unknown"}
+                                            </TextField>
                                         
                                         {/if}
     
